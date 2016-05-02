@@ -22,13 +22,13 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Medium</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
         </mutableArray>
         <mutableArray key="HelveticaNeueLights.ttc">
@@ -444,7 +444,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper-default" translatesAutoresizingMaskIntoConstraints="NO" id="8tO-ay-0Bj">
-                                <rect key="frame" x="0.0" y="-69" width="517" height="736"/>
+                                <rect key="frame" x="0.0" y="-253" width="517" height="920"/>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLt-8v-uP1" userLabel="Error Bar">
                                 <rect key="frame" x="0.0" y="25" width="375" height="26"/>
@@ -714,7 +714,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper-default" translatesAutoresizingMaskIntoConstraints="NO" id="ihm-bL-FFP">
-                                <rect key="frame" x="-71" y="-69" width="517" height="736"/>
+                                <rect key="frame" x="-71" y="-253" width="517" height="920"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.67000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="($0.00)" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZH0-Ng-7xb">
                                 <rect key="frame" x="212" y="89" width="51.5" height="20"/>
@@ -1121,7 +1121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper-default" translatesAutoresizingMaskIntoConstraints="NO" id="tQ2-Uz-bsZ">
-                                <rect key="frame" x="-94" y="-69" width="517" height="736"/>
+                                <rect key="frame" x="-94" y="-253" width="517" height="920"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ƀ 0.00 ($0.00)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRT-Sr-x6R">
                                 <rect key="frame" x="137" y="172" width="101" height="45"/>
@@ -1499,7 +1499,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper-welcome" translatesAutoresizingMaskIntoConstraints="NO" id="pb2-E7-2ep">
-                                        <rect key="frame" x="0.0" y="-69" width="964" height="736"/>
+                                        <rect key="frame" x="0.0" y="-253" width="517" height="920"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
                                 </subviews>
@@ -1514,9 +1514,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breadwallet-big" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-52-Dwn">
-                                <rect key="frame" x="59" y="258" width="257" height="151"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOa-zm-TDG">
                                 <rect key="frame" x="97" y="259" width="180" height="44"/>
                                 <constraints>
@@ -1527,29 +1524,24 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="new wallet" backgroundImage="button-bg-white">
-                                    <color key="titleShadowColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="create wallet" backgroundImage="button-bg-white">
+                                    <color key="titleColor" red="0.59215686274509804" green="0.87058823529411766" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="disabled" backgroundImage="button-bg-disabled"/>
-                                <state key="highlighted" backgroundImage="button-bg-white-pressed">
-                                    <color key="titleColor" red="0.99215692281723022" green="0.54117649793624878" blue="0.16862745583057404" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="highlighted" backgroundImage="button-bg-white-pressed"/>
                                 <connections>
                                     <action selector="start:" destination="jSI-EH-TU3" eventType="touchUpInside" id="NCk-RG-cGT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w7-k8-9wY">
-                                <rect key="frame" x="97" y="363" width="180" height="44"/>
+                                <rect key="frame" x="97" y="346" width="180" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="SS8-xT-kei"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="recover wallet" backgroundImage="button-bg-white">
-                                    <color key="titleShadowColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="recover wallet"/>
                                 <state key="disabled" backgroundImage="button-bg-disabled"/>
                                 <state key="highlighted" backgroundImage="button-bg-white-pressed">
                                     <color key="titleColor" red="0.99215692280000001" green="0.5411764979" blue="0.16862745579999999" alpha="1" colorSpace="deviceRGB"/>
@@ -1562,35 +1554,22 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Q5d-52-Dwn" secondAttribute="centerX" id="C2B-IW-4b6"/>
                             <constraint firstAttribute="centerY" secondItem="dOa-zm-TDG" secondAttribute="centerY" constant="52" id="DZj-AR-xVU"/>
                             <constraint firstAttribute="width" secondItem="1xc-b5-vde" secondAttribute="width" id="KlQ-YA-AGy"/>
                             <constraint firstAttribute="centerX" secondItem="4w7-k8-9wY" secondAttribute="centerX" id="cgR-0k-6zT"/>
                             <constraint firstItem="1xc-b5-vde" firstAttribute="height" secondItem="TKd-gT-9T7" secondAttribute="height" id="dja-QP-Uv4"/>
                             <constraint firstItem="4w7-k8-9wY" firstAttribute="width" secondItem="dOa-zm-TDG" secondAttribute="width" id="f9r-kG-LoP"/>
-                            <constraint firstItem="4w7-k8-9wY" firstAttribute="centerY" secondItem="TKd-gT-9T7" secondAttribute="centerY" constant="52" id="hF3-1s-SMx"/>
+                            <constraint firstItem="4w7-k8-9wY" firstAttribute="centerY" secondItem="TKd-gT-9T7" secondAttribute="centerY" constant="34.5" id="hF3-1s-SMx"/>
                             <constraint firstAttribute="centerX" secondItem="dOa-zm-TDG" secondAttribute="centerX" id="ksL-p8-tmf"/>
                             <constraint firstAttribute="bottom" secondItem="1xc-b5-vde" secondAttribute="bottom" id="oLo-cU-g7w"/>
-                            <constraint firstAttribute="centerY" secondItem="Q5d-52-Dwn" secondAttribute="centerY" id="qxA-ba-UkT"/>
                             <constraint firstAttribute="leading" secondItem="1xc-b5-vde" secondAttribute="leading" id="ydv-pT-OnM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XZh-nX-qeL">
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title=" " id="9L3-gM-TgP"/>
-                        <view key="titleView" hidden="YES" contentMode="scaleToFill" id="QAl-AP-yYv">
-                            <rect key="frame" x="138.5" y="13" width="98" height="18"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="breadwallet-white" translatesAutoresizingMaskIntoConstraints="NO" id="VBZ-P3-o77">
-                                    <rect key="frame" x="0.0" y="0.0" width="98" height="18"/>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                     </navigationItem>
                     <connections>
-                        <outlet property="logoXCenter" destination="C2B-IW-4b6" id="B75-cw-VfP"/>
                         <outlet property="newwalletButton" destination="dOa-zm-TDG" id="kFt-K9-owu"/>
                         <outlet property="paralax" destination="1xc-b5-vde" id="FHg-2c-agG"/>
                         <outlet property="paralaxXLeft" destination="ydv-pT-OnM" id="z4J-pb-pgt"/>
@@ -1618,7 +1597,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="bottom" image="wallpaper-default" translatesAutoresizingMaskIntoConstraints="NO" id="N12-14-Jsp">
-                                <rect key="frame" x="-94" y="-69" width="517" height="736"/>
+                                <rect key="frame" x="-94" y="-253" width="517" height="920"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter this wallet's recovery phrase to wipe it and start/recover another. Your current balance remains on this phrase." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="289" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-rN-4P5">
                                 <rect key="frame" x="43" y="64" width="288.5" height="61.5"/>
@@ -2473,11 +2452,6 @@ Other devices may be infected.
                         <view key="titleView" contentMode="scaleToFill" id="2TI-4e-OIp">
                             <rect key="frame" x="138.5" y="13" width="98" height="18"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="breadwallet-white" translatesAutoresizingMaskIntoConstraints="NO" id="8lh-UZ-tbs">
-                                    <rect key="frame" x="0.0" y="0.0" width="98" height="18"/>
-                                </imageView>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                     </navigationItem>
@@ -2560,7 +2534,7 @@ Other devices may be infected.
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="bottom" image="wallpaper-default" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-Fj-S7p">
-                                <rect key="frame" x="-94" y="-69" width="517" height="736"/>
+                                <rect key="frame" x="-94" y="-253" width="517" height="920"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="if you ever lose your phone, you will need this phrase to recover your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-Km-ZKY">
                                 <rect key="frame" x="44" y="235" width="287" height="39.5"/>
@@ -2711,12 +2685,11 @@ Other devices may be infected.
     <resources>
         <image name="breadwallet" width="93" height="15"/>
         <image name="breadwallet-big" width="257" height="151"/>
-        <image name="breadwallet-white" width="97" height="18"/>
         <image name="burger" width="20" height="16"/>
         <image name="button-bg-blue" width="10" height="11"/>
         <image name="button-bg-blue-pressed" width="10" height="44"/>
         <image name="button-bg-disabled" width="10" height="11"/>
-        <image name="button-bg-white" width="11" height="11"/>
+        <image name="button-bg-white" width="11" height="30"/>
         <image name="button-bg-white-pressed" width="11" height="10"/>
         <image name="cameraguide" width="234" height="234"/>
         <image name="cameraguide-blue-small" width="20" height="20"/>
@@ -2727,8 +2700,8 @@ Other devices may be infected.
         <image name="flash" width="33" height="33"/>
         <image name="lock" width="12" height="16"/>
         <image name="refresh" width="9" height="11"/>
-        <image name="wallpaper-default" width="517" height="736"/>
-        <image name="wallpaper-welcome" width="964" height="736"/>
+        <image name="wallpaper-default" width="517" height="920"/>
+        <image name="wallpaper-welcome" width="517" height="920"/>
         <image name="x" width="20" height="16"/>
     </resources>
 </document>

@@ -5,22 +5,8 @@
       "scale" : "1x"
     },
     {
-      "resizing" : {
-        "mode" : "9-part",
-        "center" : {
-          "mode" : "fill",
-          "width" : 1,
-          "height" : 1
-        },
-        "capInsets" : {
-          "bottom" : 11,
-          "top" : 11,
-          "right" : 11,
-          "left" : 10
-        }
-      },
       "idiom" : "universal",
-      "filename" : "button-bg-white.png",
+      "filename" : "button-bg-white-pressed.png",
       "scale" : "2x"
     },
     {
