@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,39 +16,13 @@
                     <view key="view" contentMode="scaleToFill" id="Qzf-u8-EOx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper-welcome" translatesAutoresizingMaskIntoConstraints="NO" id="FwI-2H-GnU">
-                                <rect key="frame" x="0.0" y="-69" width="964" height="736"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breadwallet-big" translatesAutoresizingMaskIntoConstraints="NO" id="Ph3-0i-aKu">
-                                <rect key="frame" x="59" y="258" width="257" height="151"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.75294117647058822" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="FwI-2H-GnU" firstAttribute="leading" secondItem="Qzf-u8-EOx" secondAttribute="leading" id="Lrv-Hf-8SQ"/>
-                            <constraint firstAttribute="bottom" secondItem="FwI-2H-GnU" secondAttribute="bottom" id="Wap-Zv-qBF"/>
-                            <constraint firstAttribute="trailing" secondItem="FwI-2H-GnU" secondAttribute="trailing" id="a5e-FZ-9XI"/>
-                            <constraint firstAttribute="centerY" secondItem="Ph3-0i-aKu" secondAttribute="centerY" id="bZf-Q1-i91"/>
-                            <constraint firstItem="FwI-2H-GnU" firstAttribute="top" secondItem="Qzf-u8-EOx" secondAttribute="top" id="kTv-lQ-twH"/>
-                            <constraint firstAttribute="centerX" secondItem="Ph3-0i-aKu" secondAttribute="centerX" id="qMn-y2-5YB"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="a5e-FZ-9XI"/>
-                                <exclude reference="kTv-lQ-twH"/>
-                            </mask>
-                        </variation>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="breadwallet-big" width="257" height="151"/>
-        <image name="wallpaper-welcome" width="964" height="736"/>
-    </resources>
 </document>
