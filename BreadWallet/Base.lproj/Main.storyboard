@@ -522,15 +522,10 @@
                                     <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper-welcome" translatesAutoresizingMaskIntoConstraints="NO" id="YfU-Ll-3CJ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breadwallet-big" translatesAutoresizingMaskIntoConstraints="NO" id="ftO-Gq-vuw">
-                                        <rect key="frame" x="59" y="258" width="257" height="151"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.75294117647058822" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="YfU-Ll-3CJ" secondAttribute="bottom" id="1WA-sY-YGj"/>
-                                    <constraint firstAttribute="centerY" secondItem="ftO-Gq-vuw" secondAttribute="centerY" id="IPn-O5-6yt"/>
-                                    <constraint firstAttribute="centerX" secondItem="ftO-Gq-vuw" secondAttribute="centerX" id="Oea-Xb-jmc"/>
                                     <constraint firstItem="YfU-Ll-3CJ" firstAttribute="top" secondItem="B1V-5u-az7" secondAttribute="top" id="QAu-aV-8Cx"/>
                                     <constraint firstAttribute="trailing" secondItem="YfU-Ll-3CJ" secondAttribute="trailing" id="RRq-BR-02v"/>
                                     <constraint firstItem="YfU-Ll-3CJ" firstAttribute="leading" secondItem="B1V-5u-az7" secondAttribute="leading" id="daO-CQ-Hn7"/>
@@ -2648,7 +2643,6 @@ Other devices may be infected.
     </scenes>
     <resources>
         <image name="breadwallet" width="93" height="15"/>
-        <image name="breadwallet-big" width="257" height="151"/>
         <image name="burger" width="20" height="16"/>
         <image name="button-bg-blue" width="10" height="11"/>
         <image name="button-bg-blue-pressed" width="10" height="44"/>
