@@ -140,7 +140,7 @@ static NSString *sanitizeString(NSString *s)
     
     //TODO: XXX custom url splash image per: "Providing Launch Images for Custom URL Schemes."
     BRWalletManager *manager = [BRWalletManager sharedInstance];
-    if ([url.scheme isEqual:@"bread"]) { // x-callback-url handling: http://x-callback-url.com/specifications/
+    if ([url.scheme isEqual:@"loaf"]) { // x-callback-url handling: http://x-callback-url.com/specifications/
         NSString *xsource = nil, *xsuccess = nil, *xerror = nil, *uri = nil;
         NSURL *callback = nil;
 
@@ -193,7 +193,7 @@ static NSString *sanitizeString(NSString *s)
                                              ([NSURL URLWithString:xsuccess].query.length > 0) ? @"&" : @"?",
                                              manager.wallet.receiveAddress]];
         }
-        else if (([url.host isEqual:@"bitcoin-uri"] || [url.path isEqual:@"/bitcoin-uri"]) && uri &&
+        else if (([url.host isEqual:@"litecoin-uri"] || [url.path isEqual:@"/litecoin-uri"]) && uri &&
                  [[NSURL URLWithString:uri].scheme isEqual:@"litecoin"]) {
             if (xsuccess) self.callback = [NSURL URLWithString:xsuccess];
             [self handleURL:[NSURL URLWithString:uri]];

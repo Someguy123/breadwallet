@@ -50,6 +50,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *label;
 @property (nonatomic, strong) IBOutlet UIButton *addressButton;
 @property (nonatomic, strong) IBOutlet UIImageView *qrView;
+@property (nonatomic, strong) IBOutlet UIButton *genButton;
 
 @end
 
@@ -58,6 +59,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Adding border to Generate Button
+    
+    self.genButton.layer.cornerRadius = 2;
+    self.genButton.layer.borderWidth = 2;
+    self.genButton.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor colorWithRed:40.0 green:40.0 blue:40.0 alpha:0.90]);
+    self.genButton.clipsToBounds = YES;
 
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     BRPaymentRequest *req;
@@ -237,6 +245,7 @@
 
 - (IBAction)address:(id)sender
 {
+    
     if ([self nextTip]) return;
     [BREventManager saveEvent:@"receive:address"];
 
