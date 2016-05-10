@@ -1318,8 +1318,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="send money:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5l-JR-LKA">
-                                <rect key="frame" x="140" y="226" width="95" height="45"/>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5l-JR-LKA">
+                                <rect key="frame" x="133" y="156" width="109" height="45"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="TC5-Ce-4Ic"/>
@@ -1327,40 +1327,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="EKr-Gi-AHW" appends="YES" id="nUb-Yv-XS0"/>
-                                </connections>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-Wi-wk4">
-                                <rect key="frame" x="77" y="299" width="220" height="44"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="0My-rH-7KZ"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="290" id="KnJ-HV-aoB"/>
-                                    <constraint firstAttribute="height" constant="44" id="WmA-Sw-dye"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="10" maxY="0.0"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="scan QR code" image="cameraguide-blue-small" backgroundImage="button-bg-blue">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="cameraguide-small" backgroundImage="button-bg-blue-pressed">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="cameraguide-small" backgroundImage="button-bg-blue-pressed">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="scanQR:" destination="RsQ-W7-grB" eventType="touchUpInside" id="wbh-n6-WR8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfj-xS-5rN">
-                                <rect key="frame" x="77" y="383" width="220" height="44"/>
+                                <rect key="frame" x="158" y="383" width="59" height="44"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="nsj-xF-Ebz"/>
@@ -1368,9 +1337,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="pay address from clipboard" backgroundImage="button-bg-blue">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Send" backgroundImage="button-bg-brown"/>
                                 <state key="disabled" backgroundImage="button-bg-blue-pressed">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1381,29 +1348,70 @@
                                     <action selector="payToClipboard:" destination="RsQ-W7-grB" eventType="touchUpInside" id="qNZ-Ff-JNL"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-DR-cyl">
-                                <rect key="frame" x="12" y="427" width="351" height="162"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
-                                <connections>
-                                    <outlet property="delegate" destination="RsQ-W7-grB" id="r8I-vJ-Pvw"/>
-                                </connections>
-                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-J8-IQj">
+                                <rect key="frame" x="35" y="219" width="304" height="40"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" directionalLockEnabled="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-DR-cyl">
+                                        <rect key="frame" x="0.0" y="7" width="264" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="CWO-Nb-csM"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="RsQ-W7-grB" id="r8I-vJ-Pvw"/>
+                                        </connections>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-Wi-wk4">
+                                        <rect key="frame" x="272" y="8" width="24" height="24"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="QCZ-ka-r9v"/>
+                                            <constraint firstAttribute="height" constant="24" id="v0J-UL-RCP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" backgroundImage="qr-icon"/>
+                                        <state key="disabled" image="cameraguide-small" backgroundImage="button-bg-blue-pressed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="cameraguide-small" backgroundImage="button-bg-blue-pressed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scanQR:" destination="RsQ-W7-grB" eventType="touchUpInside" id="08V-vl-81S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ce6-Wi-wk4" firstAttribute="leading" secondItem="SgP-DR-cyl" secondAttribute="trailing" constant="8" symbolic="YES" id="48v-yF-7lH"/>
+                                    <constraint firstItem="SgP-DR-cyl" firstAttribute="top" secondItem="R7q-J8-IQj" secondAttribute="top" constant="7" id="7Es-Z3-3c2"/>
+                                    <constraint firstAttribute="height" constant="40" id="KEf-ia-ycb"/>
+                                    <constraint firstItem="ce6-Wi-wk4" firstAttribute="bottom" secondItem="R7q-J8-IQj" secondAttribute="bottomMargin" id="W65-7Y-D7l"/>
+                                    <constraint firstAttribute="bottom" secondItem="SgP-DR-cyl" secondAttribute="bottom" constant="9" id="W7z-di-AgY"/>
+                                    <constraint firstItem="ce6-Wi-wk4" firstAttribute="top" secondItem="R7q-J8-IQj" secondAttribute="topMargin" id="Yjd-zc-lsO"/>
+                                    <constraint firstItem="ce6-Wi-wk4" firstAttribute="trailing" secondItem="R7q-J8-IQj" secondAttribute="trailingMargin" id="s6U-Mk-wVv"/>
+                                    <constraint firstItem="SgP-DR-cyl" firstAttribute="leading" secondItem="R7q-J8-IQj" secondAttribute="leading" id="tdK-8M-xzg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ce6-Wi-wk4" firstAttribute="width" secondItem="bfj-xS-5rN" secondAttribute="width" id="3zv-yM-vp5"/>
+                            <constraint firstItem="bfj-xS-5rN" firstAttribute="top" secondItem="R7q-J8-IQj" secondAttribute="bottom" constant="124" id="2a0-za-Nc4"/>
+                            <constraint firstItem="R7q-J8-IQj" firstAttribute="centerX" secondItem="Nmx-0C-BXz" secondAttribute="centerX" id="4Os-ia-V4i"/>
                             <constraint firstAttribute="centerX" secondItem="l5l-JR-LKA" secondAttribute="centerX" id="BsW-Di-um1"/>
-                            <constraint firstItem="bfj-xS-5rN" firstAttribute="centerX" secondItem="SgP-DR-cyl" secondAttribute="centerX" id="FIk-PE-925"/>
+                            <constraint firstItem="R7q-J8-IQj" firstAttribute="trailing" secondItem="Nmx-0C-BXz" secondAttribute="trailingMargin" constant="-20" id="F8c-a7-Q27"/>
                             <constraint firstItem="bfj-xS-5rN" firstAttribute="centerY" secondItem="Nmx-0C-BXz" secondAttribute="centerY" constant="72" id="KuY-Hv-Ke7"/>
-                            <constraint firstAttribute="bottom" secondItem="SgP-DR-cyl" secondAttribute="bottom" constant="78" id="Pqy-bh-DIk"/>
-                            <constraint firstItem="SgP-DR-cyl" firstAttribute="top" secondItem="bfj-xS-5rN" secondAttribute="bottom" id="QP8-Ux-Sgh"/>
-                            <constraint firstAttribute="centerY" secondItem="l5l-JR-LKA" secondAttribute="centerY" constant="85" id="UCj-qz-yjt"/>
-                            <constraint firstAttribute="centerX" secondItem="ce6-Wi-wk4" secondAttribute="centerX" id="dgu-8P-xXI"/>
-                            <constraint firstAttribute="centerY" secondItem="ce6-Wi-wk4" secondAttribute="centerY" constant="12" id="qpi-Sr-DZd"/>
-                            <constraint firstItem="SgP-DR-cyl" firstAttribute="leading" secondItem="Nmx-0C-BXz" secondAttribute="leading" constant="12" id="tzu-xe-VUc"/>
+                            <constraint firstItem="R7q-J8-IQj" firstAttribute="leading" secondItem="Nmx-0C-BXz" secondAttribute="leadingMargin" constant="19" id="Ohm-rB-6Hk"/>
+                            <constraint firstAttribute="centerY" secondItem="l5l-JR-LKA" secondAttribute="centerY" constant="155" id="UCj-qz-yjt"/>
+                            <constraint firstItem="R7q-J8-IQj" firstAttribute="top" secondItem="l5l-JR-LKA" secondAttribute="bottom" constant="18" id="nGY-fh-7Jl"/>
                             <constraint firstAttribute="centerX" secondItem="bfj-xS-5rN" secondAttribute="centerX" id="wtK-vc-r7p"/>
                         </constraints>
                         <connections>
@@ -1411,34 +1419,33 @@
                             <outletCollection property="gestureRecognizers" destination="wh9-zs-FMO" appends="YES" id="Apq-Qt-2K4"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="6SS-jK-5ne"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="addressView" destination="R7q-J8-IQj" id="gXX-Y7-VYU"/>
                         <outlet property="clipboardButton" destination="bfj-xS-5rN" id="mfH-NX-2iX"/>
                         <outlet property="clipboardText" destination="SgP-DR-cyl" id="pL2-sH-61L"/>
-                        <outlet property="clipboardXLeft" destination="tzu-xe-VUc" id="GHU-QA-qzJ"/>
                         <outlet property="scanButton" destination="ce6-Wi-wk4" id="tr9-fj-NRa"/>
                         <outlet property="sendLabel" destination="l5l-JR-LKA" id="uWh-qp-akV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6F7-JO-CPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="EKr-Gi-AHW">
-                    <connections>
-                        <action selector="tip:" destination="RsQ-W7-grB" id="L5a-Ga-HSE"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="8hO-zb-g85">
-                    <connections>
-                        <action selector="tip:" destination="RsQ-W7-grB" id="m4U-sk-tKD"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="wh9-zs-FMO">
                     <connections>
                         <action selector="tip:" destination="RsQ-W7-grB" id="nrd-js-eVc"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <tapGestureRecognizer id="8hO-zb-g85">
+                    <connections>
+                        <action selector="tip:" destination="RsQ-W7-grB" id="m4U-sk-tKD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="EKr-Gi-AHW">
+                    <connections>
+                        <action selector="tip:" destination="RsQ-W7-grB" id="L5a-Ga-HSE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1014" y="1430"/>
+            <point key="canvasLocation" x="1013.5" y="1429.5"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="9U9-46-WI3">
@@ -2651,13 +2658,13 @@ Other devices may be infected.
         <image name="button-bg-white" width="11" height="30"/>
         <image name="button-bg-white-pressed" width="11" height="10"/>
         <image name="cameraguide" width="234" height="234"/>
-        <image name="cameraguide-blue-small" width="20" height="20"/>
         <image name="cameraguide-small" width="20" height="20"/>
         <image name="checkbox-empty" width="22" height="22"/>
         <image name="deletetoleft" width="29" height="23"/>
         <image name="deletetoleft-pressed" width="29" height="23"/>
         <image name="flash" width="33" height="33"/>
         <image name="lock" width="12" height="16"/>
+        <image name="qr-icon" width="133" height="133"/>
         <image name="refresh" width="9" height="11"/>
         <image name="wallpaper-default" width="517" height="920"/>
         <image name="wallpaper-welcome" width="517" height="920"/>

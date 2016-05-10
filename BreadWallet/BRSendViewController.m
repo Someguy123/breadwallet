@@ -73,6 +73,7 @@ static NSString *sanitizeString(NSString *s)
 @property (nonatomic, strong) IBOutlet UIButton *scanButton, *clipboardButton;
 @property (nonatomic, strong) IBOutlet UITextView *clipboardText;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *clipboardXLeft;
+@property (strong, nonatomic) IBOutlet UIView *addressView;
 
 @end
 
@@ -82,6 +83,18 @@ static NSString *sanitizeString(NSString *s)
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Button rounding for custom buttons
+    
+    self.clipboardButton.layer.cornerRadius = 3;
+    self.clipboardButton.layer.borderWidth = 2;
+    self.clipboardButton.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor colorWithRed:40.0 green:40.0 blue:40.0 alpha:0.90]);
+    self.clipboardButton.clipsToBounds = YES;
+    
+    self.addressView.layer.cornerRadius = 2;
+    self.addressView.layer.borderWidth = 2;
+    self.addressView.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor colorWithRed:255.0 green:255.0 blue:255.0 alpha:1.0]);
+    self.addressView.clipsToBounds = YES;
     
     // TODO: XXX redesign page with round buttons like the iOS power down screen... apple watch also has round buttons
     self.scanButton.titleLabel.adjustsFontSizeToFitWidth = YES;
@@ -94,7 +107,7 @@ static NSString *sanitizeString(NSString *s)
 #pragma clang diagnostic pop
     
     self.clipboardText.textContainerInset = UIEdgeInsetsMake(8.0, 0.0, 0.0, 0.0);
-    
+  
     self.clipboardObserver =
         [[NSNotificationCenter defaultCenter] addObserverForName:UIPasteboardChangedNotification object:nil queue:nil
         usingBlock:^(NSNotification *note) {
@@ -944,7 +957,7 @@ fromConnection:(AVCaptureConnection *)connection
         BRPaymentRequest *request = [BRPaymentRequest requestWithString:addr];
 
         if (request.isValid || [addr isValidBitcoinPrivateKey] || [addr isValidBitcoinBIP38Key] ||
-            (request.r.length > 0 && [request.scheme isEqual:@"bitcoin"])) {
+            (request.r.length > 0 && [request.scheme isEqual:@"litecoin"])) {
             self.scanController.cameraGuide.image = [UIImage imageNamed:@"cameraguide-green"];
             [self.scanController stop];
             [BREventManager saveEvent:@"send:valid_qr_scan"];
@@ -1084,18 +1097,18 @@ fromConnection:(AVCaptureConnection *)connection
     self.clipboardText.text = [UIPasteboard generalPasteboard].string;
     [textView scrollRangeToVisible:textView.selectedRange];
     
-    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        self.view.center = CGPointMake(self.view.center.x, self.view.bounds.size.height/2.0 - 100.0);
-        self.sendLabel.alpha = 0.0;
-    } completion:nil];
+//    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+//        self.view.center = CGPointMake(self.view.center.x, self.view.bounds.size.height/2.0 - 100.0);
+//        self.sendLabel.alpha = 0.0;
+//    } completion:nil];
 }
 
 - (void)textViewDidEndEditing:(UITextView *)textView
 {
-    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        self.view.center = CGPointMake(self.view.center.x, self.view.bounds.size.height/2.0);
-        self.sendLabel.alpha = 1.0;
-    } completion:nil];
+//    [UIView animateWithDuration:0.35 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+//        self.view.center = CGPointMake(self.view.center.x, self.view.bounds.size.height/2.0);
+//        self.sendLabel.alpha = 1.0;
+//    } completion:nil];
     
     if (! self.useClipboard) [UIPasteboard generalPasteboard].string = textView.text;
     [self updateClipboardText];

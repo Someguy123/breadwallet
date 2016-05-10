@@ -134,8 +134,8 @@
 /* Class = "UIButton"; normalTitle = "4"; ObjectID = "b8y-tJ-xAB"; */
 "b8y-tJ-xAB.normalTitle" = "4";
 
-/* Class = "UIButton"; normalTitle = "pay address from clipboard"; ObjectID = "bfj-xS-5rN"; */
-"bfj-xS-5rN.normalTitle" = "pay address from clipboard";
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "bfj-xS-5rN"; */
+"bfj-xS-5rN.normalTitle" = "Send";
 
 /* Class = "UILabel"; text = "ƀ 0.00 ($0.00)"; ObjectID = "cRT-Sr-x6R"; */
 "cRT-Sr-x6R.text" = "ƀ 0.00 ($0.00)";
