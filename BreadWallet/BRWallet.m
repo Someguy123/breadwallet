@@ -506,7 +506,7 @@ masterPublicKey:(NSData *)masterPublicKey seed:(NSData *(^)(NSString *authprompt
         return nil;
     }
     
-    if (balance - (amount + feeAmount) >= self.minOutputAmount) {
+    if (balance - (amount + feeAmount) > self.minOutputAmount) {
         [transaction addOutputAddress:self.changeAddress amount:balance - (amount + feeAmount)];
         [transaction shuffleOutputOrder];
     }
@@ -863,9 +863,12 @@ masterPublicKey:(NSData *)masterPublicKey seed:(NSData *(^)(NSString *authprompt
 // outputs below this amount are uneconomical due to fees
 - (uint64_t)minOutputAmount
 {
-    uint64_t amount = self.feePerKb*148/1000;
+//    uint64_t amount = self.feePerKb*148/1000;
     
-    return (amount > TX_MIN_OUTPUT_AMOUNT) ? amount : TX_MIN_OUTPUT_AMOUNT;
+//    return (amount > TX_MIN_OUTPUT_AMOUNT) ? amount : TX_MIN_OUTPUT_AMOUNT;
+    
+    // I don't understand what the previous things do, so I'll just leave this here...
+    return TX_MIN_OUTPUT_AMOUNT;
 }
 
 - (uint64_t)maxOutputAmount
